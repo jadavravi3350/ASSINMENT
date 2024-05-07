@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+
+}
+
+.font-ans h3
+{
+   color: orangered;
+}
+
+.font-ans b
+{
+  color: blue;
+}
+
+
+.section1 {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 0 100px 0 100px;
+    width: 100%;
+
+}
+
+.sec1 {
+    display: grid;
+    gap: 20px;
+    background-color: black;
+
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 20px;
+
+}
+
+.img2 {
+    grid-template-columns: 2fr 6fr 2fr;
+
+}
+
+.img3 {
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.img4 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section1 img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec2 {
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    background-color: black;
+}
+
+.fa-brands {
+    padding: 5px;
+}
+
+@media (max-width: 1000px) {
+    .section1 {
+
+        padding: 0;
+    }
+}
+
+
+/* **************clip-path***********/
+
+.section2 {
+    margin: 100px;
+    background: url(../image/balun.jpg);
+    background-size: cover;
+    color: white;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    position: relative;
+    background-position-y: center;
+
+}
+
+.back-color {
+    background: rgba(0, 0, 0, 0.565);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 .wel {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.wel h2 {
+    font-size: 50px;
+}
+
+.wel p {
+    font-size: 20px;
+}
+
+.nav ul li {
+
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px;
+    position: relative;
+
+}
+
+.nav ul li a {
+    color: white;
+    transition: 1s;
+    border-bottom: 2px solid red;
+    border-bottom-width: 0px;
+}
+
+
+.nav ul li a:hover
+{
+   color: red;
+   border-bottom-width: 5px;
+}
+
+.nav span {
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.nav p {
+    border: 1px solid;
+    padding: 5px 0px;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+
+}
+
+.wel .lor {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.wel a {
+    padding: 10px;
+    margin: 20px;
+
+    border: 1px solid;
+    color: white;
+}
+
+.wel a:hover {
+    background-color: orangered;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 100px;
+
+}
+
+.icon1 {
+    width: 23%;
+    text-align: center;
+}
+
+.icon1 p {
+    font-size: 14px;
+}
+
+.icon1 i {
+    padding: 20px;
+    border: 1px solid;
+    color: red;
+}
+
+.fa-voicemail {
+    transform: rotate(180deg)
+}
+
+/* ========================= */
+
+.section3 {
+    display: flex;
+    padding: 0 100px;
+}
+
+.contant {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border: 2px solid;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    padding: 50px 0 50px 0;
+}
+
+.contant h2 {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.desing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    position: relative;
+    padding-right: 50px;
+}
+
+.ico {
+    position: absolute;
+    left: 90%;
+}
+
+.ico i {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: rgb(187, 35, 35);
+    background-color: white;
+    margin-left: 50px;
+}
+
+
+
+.section3 .img {
+    background: url(../image/sec-2-back.jpeg);
+    background-size: cover;
+}
+
+
+.text h3 {
+    color: orangered;
+    font-size: 10px;
+}
+
+.text p {
+    font-size: 14px;
+    color: rgb(100, 87, 87);
+}
+
+/* ================================ */
+
+
+.section4 
+{
+    height: 500px;
+    background: url(../image/teame_bg.jpg);
+    background-size:100% 100%; 
+    position: relative;
+    margin: 0px 100px;
+    filter: brightness(60%);
+    
+}
+
+.wave 
+{
+    height: 350px;
+    background: url(../image/team_transparent_bg.png);
+    background-size: 100% 100%;
+    
+}
+
+.sec4
+{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.d1
+{
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    box-sizing: 0 0 10px;
+    border-radius: 50%;
+
+}
+
+.d1 img
+{
+    border-radius: 50%;
+    filter: brightness(140%);
+}
+
+.s1 
+{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.s2 
+{
+   position: absolute;
+   top: 60%;
+   left: 23%;
+   height: 70px;
+   width: 70px;
+}
+
+.s3 
+{
+     position: absolute;
+     top: 58%;
+     left: 40%;
+}
+
+.s4
+{
+     position: absolute;
+     top: 60%;
+     left: 55%;
+}
+
+.s5
+{
+     position: absolute;
+     top: 62%;
+     left: 70%;
+}
+
+.web1
+{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    color: white;
+    text-align: center;
+}
+
+/* =========================================== */
+
+.section5 
+{
+    background-color: aliceblue;
+    margin: 0px 100px;
+}
+
+.gray
+{
+    margin: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.sec5
+{
+    width:30%;
+}
+
+.x1 
+{
+    background-color: darkslategray;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+
+}
+
+.x2 
+{
+    padding: 0px 20px;
+}
+
+.section5 button
+{
+    padding: 0px 20px;
+}

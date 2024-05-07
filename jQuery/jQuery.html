@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+            integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            .xyz
+            {
+                background-color: blue;
+                height: 200px;
+                width: 200px;
+                text-align: center;
+            }
+
+            #slide1
+            {
+                background-color: lightblue;
+            }
+
+           .king *, .king
+            {
+                border: 5px solid gray;
+                font-size: 30px;
+                padding: 20px;
+                display: block;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-family: lucida sans;"><u> JQuery
+                Basic, Effects & Advanced </u></h1>
+
+        <h2>(1). What is jQuery ?</h2>
+
+        <p>==> jQuery : It is a javascript framework
+            Framework : write less do more </p>
+
+        <p>==> jQuery is a lightweight, "write less, do more", JavaScript
+            library. The purpose of jQuery is to make it much easier to use
+            JavaScript .</p>
+
+        <!-- jQuery ka matalab o hota he ki javascript ko lamba nahi likhna ho to ham jQuery ka use karate he  -->
+
+        <h2>(2). How to Apply CSS Using JQuery, HOW to Add Claas and Remove
+            Claas in JQuery, JQuery Animation ?</h2>
+
+        <p>==>step 1= isme sabse pahle cdn link leni hoti he</p>
+        <p>==>step 2= badme usme $ karke get karana hota or usme function ko add
+            karna hota he</p>
+        <p>==>step 1= badme usme event add karni hoti he</p>
+
+        <div style="text-align: center; border: 1px solid;">
+            <h2><u>::==:: Apply CSS ::==::</u></h2>
+
+            <h2 id="hello">HEllO All</h2>
+            <button id="addcss" style="background: red;">CSS</button>
+        </div>
+
+        <div style="text-align: center; border: 1px solid;">
+            <h2><u>::==:: ADD CLAAS ::==::</u></h2>
+
+            <h2 class="xyz" id="yu">HEllO All2</h2>
+            <button id="addclaas" style="background: red;">Add Claas and Remove Claas</button>
+
+        </div>
+
+        <!-- itane step se ham jQuery ko asanise bana sakte he -->
+
+        <h2>(3). How to create slider with Animation ?</h2>
+
+        <p>==><span id="quition1">Table of Contents:</span>
+
+            <ol id="slide1">
+                <li>Step 1: Come up with a strategy for the slider.</li>
+                <li>Step 2: Update the background image in each slide.</li>
+                <li>Step 3: Update the text layers in each slide.</li>
+                <li>Step 4: Edit the button text and design in each slide.</li>
+                <li>Step 5: Edit the slider navigation.</li>
+            </ol>
+        </p>
+
+        <!-- **************** -->
+
+        <h2>(4). Event bubbling tickling example</h2>
+
+        <div class="the">
+            <div class="king">bdy (great-great-grandparent)
+                <div class="ma1">Div (great-grandparent)
+                    <ul class="ul">ul (grandparent)
+                        <li class="li">li (direct parent)
+                            <span class="span">span</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $("#addcss").click(function (){
+                $("#hello").css("background","blue")
+            })
+
+            $("#addclaas").click(function (){
+                $("#yu").toggleClass("xyz")
+            })
+
+            // ***************
+
+            $("#quition1").click(function (){
+                $("#slide1").slideToggle(3000)
+            })
+
+            // ***********
+
+            $('.span').parentsUntil(".the").css("border","5px solid red")
+
+        </script>
+
+    </body>
+</html>

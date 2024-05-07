@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center;"><u>- : : Bootstrap Basic & Advanced : :
+        -</u></h1>
+
+    <h2>(1). What are the advantages of Bootstrap?</h2>
+
+    <p>== >
+
+      <ul>
+        <li>Access to a Vast Open Source Community of Resources. There is a vast
+          community of open-source developers who contribute regularly to
+          Bootstrap. ...</li>
+        <li>Consistent Designs. ...</li>
+        <li>Access to Support. ...</li>
+        <li>Fast Development. ...</li>
+        <li>Responsive Business Actions with a Grid System. ...</li>
+        <li>Customizable Expansion. ...</li>
+        <li>Loaded JavaScript Components. ...</li>
+        <li>Easy to Integrate.</li>
+      </ul>
+      <!-- is ka use ham web site ko fast banane ke liye kiya jata he 
+             or a HTML CSS and JAVASCRIPIT ki library he or is ka fayda 
+             ye he ki isame code ko short me khatam ho jata he  -->
+    </p>
+
+    <h2>(2). What is a Bootstrap Container, and how does it work?</h2>
+
+    <p>== > Containers are the most basic layout element in Bootstrap and are
+      required when using our default grid system.</p>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Carousel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn border border-1 border-success text-success"
+              type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ********** -->
+
+    <div id="carouselExampleCaptions" class="carousel slide"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/image 1.png" class="d-block w-100" alt="..."
+            height="500px">
+          <div class="carousel-caption text-sm-end">
+            <h5 class="display-6">One more for good measure</h5>
+            <p>Cras justo odio, dapibus ac facilisis in , egestas Donec id elit
+              none mi prota gravida at eget metus.</p>
+            <p>Nullam id dolor id nibh ultriciec vehicula ut id elit.</p>
+            <button type="button" class="btn bg-primary text-bg-danger">Browse
+              gallery </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/image 2.jpg" class="d-block w-100" alt="..."
+            height="500px">
+          <div class="carousel-caption text-sm-end text-black">
+            <h5 class="display-6">One more for good measure</h5>
+            <p>Cras justo odio, dapibus ac facilisis in , egestas Donec id elit
+              none mi prota gravida at eget metus.</p>
+            <p>Nullam id dolor id nibh ultriciec vehicula ut id elit.</p>
+            <button type="button" class="btn bg-primary text-bg-danger">Browse
+              gallery </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/image 3.png" class="d-block w-100" alt="..."
+            height="500px">
+          <div class="carousel-caption text-sm-end">
+            <h5 class="display-6">One more for good measure</h5>
+            <p>Cras justo odio, dapibus ac facilisis in , egestas Donec id elit
+              none mi prota gravida at eget metus.</p>
+            <p>Nullam id dolor id nibh ultriciec vehicula ut id elit.</p>
+            <button type="button" class="btn bg-primary text-bg-danger">Browse
+              gallery </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- *************** -->
+
+    <div class=" d-lg-flex  text-center justify-content-center pt-5 pb-5">
+
+      <div class="col-lg-3 col-12 py-4">
+
+        <div class="d-flex justify-content-center"><div
+            class="bg-secondary w-25 rounded-circle"
+            style="height: 80px;"></div></div>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+          Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+          risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+          cursus magna.</p>
+        <button type="button" class="btn btn-secondary">View details =></button>
+
+      </div>
+
+      <div class="col-lg-3 col-12 py-4">
+
+        <div class="d-flex justify-content-center"><div
+            class="bg-secondary w-25 rounded-circle"
+            style="height: 80px;"></div></div>
+        <h2>Heading</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
+          fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh.</p>
+        <button type="button" class="btn btn-secondary">View details =></button>
+
+      </div>
+
+      <div class="col-lg-3 col-12 py-4">
+        <div class="d-flex justify-content-center"><div
+            class="bg-secondary w-25 rounded-circle"
+            style="height: 80px;"></div></div>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas
+          eget quam. Vestibulum id ligula porta felis euismod semper. Fusce
+          dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+          fermentum massa justo sit amet risus.</p>
+        <button type="button" class="btn btn-secondary">View details =></button>
+
+      </div>
+
+    </div>
+
+    <!-- ****************** -->
+
+    <div class="container-fluid px-5">
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="image/image 1.png" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text
+                below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins
+                  ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text
+                below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins
+                  ago</small></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img src="image/image 1.png" class="card-img" alt="...">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="image/image 1.png" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text
+                below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins
+                  ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ************** -->
+
+    <h2>(3). What are the default Bootstrap text settings?</h2>
+
+    <p>== > Bootstrap 4 uses a default font-size of 16px, and its line-height is
+      1.5. The default font-family is "Helvetica Neue", Helvetica, Arial,
+      sans-serif. In addition, all <p> elements have margin-top: 0 and
+        margin-bottom: 1rem (16px by default).</p>
+
+      <h2>Example</h2>
+
+      <ol>
+        <li>h1 Bootstrap heading (2.5rem = 40px)</li>
+        <li>h2 Bootstrap heading (2rem = 32px)</li>
+        <li>h3 Bootstrap heading (1.75rem = 28px)</li>
+        <li>h4 Bootstrap heading (1.5rem = 24px)</li>
+        <li>h5 Bootstrap heading (1.25rem = 20px)</li>
+        <li>h6 Bootstrap heading (1rem = 16px)</li>
+      </ol>
+
+      <!-- is se ham alag alag font:size and font:family and always sab kuch used kar sakate he font ki sab  -->
+
+      <h2>(4). What do you know about the Bootstrap Grid System?</h2>
+
+      <p>== > Bootstrap's grid system <mark>uses a series of containers, rows,
+          and columns to layout and align content.</mark> It's built with
+        flexbox and is fully responsive. Below is an example and an in-depth
+        look at how the grid comes together. New to or unfamiliar with
+        flexbox?</p>
+
+      <ol>
+        <li>Bootstrap's grid system uses a series of containers, rows, and
+          columns to layout and align content. </li>
+        <li> It's built with flexbox and is fully responsive.</li>
+        <br>
+
+        <li><b>Below is an example and an in-depth look at how the grid comes
+            together.</b></li>
+        <br>
+        <li>Bootstrap's grid system is built with flexbox and allows up to 12
+          columns across the page.</li>
+
+        <li>The grid system is responsive, and the columns will re-arrange
+          automatically depending on the screen size.</li><br>
+
+        <li><b>The Bootstrap 5 grid system has six classes:</b></li>
+        <br>
+        <li>.col- (extra small devices - screen width less than 576px)</li>
+        <li>.col-sm- (small devices - screen width equal to or greater than
+          576px)</li>
+        <li>.col-md- (medium devices - screen width equal to or greater than
+          768px)</li>
+        <li>.col-lg- (large devices - screen width equal to or greater than
+          992px)</li>
+        <li>.col-xl- (xlarge devices - screen width equal to or greater than
+          1200px)</li>
+        <li>.col-xxl- (xxlarge devices - screen width equal to or greater than
+          1400px)</li>
+
+      </ol>
+
+      <!-- <b>   ===>is me one row or sumthing five col and auto responsive ho jata he </b> -->
+
+      <h2>(5). What is the difference between Bootstrap 4 and Bootstrap 5</h2>
+
+      <p>== > Bootstrap 5 has six levels: xs, sm, md, lg, xl, and xxl. Bootstrap
+        4 includes jquery and all associated plug-ins. Jquery has been deleted
+        and replaced with vanilla JS and several functional plug-ins in
+        Bootstrap 5. Bootstrap 4 provides a few colors for a web page.</p>
+
+      <!-- Bootstrap 4 se Bootstrap 5 ye update vesion he or Bootstrap 4 me thode hi color diye gaye he Bootstrap 5 me
+          responsiv jaldi ho jata he is liye is ka jada hota he or isme jQuey ko nikal diya he  -->
+
+      <h2>(6). What is a Button Group, and what is the class for a basic Button
+        Group?</h2>
+
+      <p>== > Bootstrap allows you to group a series of buttons together (on a
+        single line) in a button group: <br>
+
+        is matalab ye hi ki isme ham single line me button banate he </p>
+
+      <div class="container">
+        <h2>Button Group</h2>
+        <p>The .btn-group class creates a button group in basic:</p>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary">Apple</button>
+          <button type="button" class="btn btn-primary">Samsung</button>
+          <button type="button" class="btn btn-secondary">Sony</button>
+        </div>
+      </div>
+
+      <h2>(7). How can you use Bootstrap to make thumbnails?</h2>
+
+      <p>== > <h5> **===** Bootstrap - Thumbnails **==**</h5></p>
+
+      <ol>
+        <li>Add an <a> tag with the class of . thumbnail around an image.</li>
+          <li>This adds four pixels of padding and a gray border.</li>
+          <li>On hover, an animated glow outlines the image.</li>
+        </ol>
+
+        <b>== this one example ==</b>
+
+        <div class="row container">
+
+          <div class="col-sm-6 col-md-3">
+
+            <a href="#" class="img-thumbnail">
+
+              <img src="image/img 4.jpg" alt="thumbnail">
+
+            </a>
+
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+
+            <a href="#" class="img-thumbnail">
+
+              <img src="image/img 4.jpg" alt="thumbnail">
+
+            </a>
+
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+
+            <a href="#" class="img-thumbnail">
+
+              <img src="image/img 4.jpg" alt="Generic placeholder thumbnail">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- is me <a> ka use hota he or  -->
+
+        <h2>(8). In Bootstrap 4, what is flexbox?</h2>
+
+        <p>== > Flexbox. The biggest difference between Bootstrap 3 and
+          Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats,
+          to handle the layout. The Flexible Box Layout Module, makes it easier
+          to design flexible responsive layout structure without using float or
+          positioning.</p>
+
+        <!--Bootstrap 3 and Bootstrap 4 ke bich ab floats jaga Flexible Box no use thay se or is me ham d-flex kar ke
+            jitne div hote isme ham width de ke banate he -->
+
+        <h2>(9). How can one create an alert in Bootstrap?</h2>
+
+        <p>== > Alerts are created with the .alert class, followed by one of the
+          four contextual classes .alert-success, .alert-info, .alert-warning or
+          .alert-danger:
+
+          <div class="container">
+            <h2>Alerts</h2>
+            <div class="alert alert-success">
+              <strong>Success!</strong> This alert box could indicate a
+              successful or positive action.
+            </div>
+            <div class="alert alert-info">
+              <strong>Info!</strong> This alert box could indicate a neutral
+              informative change or action.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Warning!</strong> This alert box could indicate a warning
+              that might need attention.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Danger!</strong> This alert box could indicate a dangerous
+              or potentially negative action.
+            </div>
+          </div>
+
+        </p>
+
+        <!-- is me ham alag alag alert ka use karte he or bg color dalte he or hamri alert ban jati he -->
+
+        <h2>(10). What is a bootstrap card and how would you create one?</h2>
+
+        <b>Bootstrap Card Basics</b>
+
+        <p>== >To create Bootstrap cards, you need to understand the card class
+          and its customizations and layouts. A basic Bootstrap card consists of
+          a . card class with the . card-body class, allowing you to add text,
+          images, links, and other Bootstrap elements within a rounded
+          border.</p>
+
+        <div class>
+
+          <div class="card m-2" style="width: 300px;">
+            <div class="card-body">
+              <h2 class="card-title">This is a title</h2>
+              <p class="card-text">This is body text inside my Bootstrap
+                card.</p>
+              <a href="#" class="btn btn-secondary">Learn more</a>
+            </div>
+          </div>
+
+          <div class="card text-center m-2" style="width: 300px;">
+            <div class="card-body">
+              <h2 class="card-title">This is a title</h2>
+              <p class="card-text">This is body text inside my Bootstrap
+                card.</p>
+              <a href="#" class="btn btn-secondary">Learn more</a>
+            </div>
+          </div>
+
+          <div class="card text-end m-2" style="width: 300px;">
+            <div class="card-body">
+              <h2 class="card-title">This is a title</h2>
+              <p class="card-text">This is body text inside my Bootstrap
+                card.</p>
+              <a href="#" class="btn btn-secondary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- simply dekh ne jaye to normal card is tarikhe se bana sakate he -->
+
+      </body>
+    </html>

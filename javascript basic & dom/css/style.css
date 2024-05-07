@@ -1,0 +1,121 @@
+.password {
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.basicmath {
+    border: 3px solid red;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.basicmath input {
+    padding: 15px;
+    font-size: 30px;
+
+}
+
+.math {
+    display: flex;
+    text-align: center;
+
+}
+
+.ma1 {
+    width: 50%;
+}
+
+.Createresult {
+    border: 5px solid gray;
+}
+
+.creat {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ceat1 {
+    width: 30%;
+
+}
+
+.ceat1 * {
+    display: block;
+    margin: 10px;
+}
+
+/* *********** */
+
+.mane
+{
+    background-color: #000; 
+    height: 70vh;
+    color: white; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.tane {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.swiper {
+    padding-bottom: 60px !important;
+    height: 250px;
+}
+
+.swiper .swiper-wrapper {
+    align-items: center;
+}
+
+.swiper .swiper-slide {
+    border-radius: 5px;
+    height: 180px !important;
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+
+.swiper .swiper-slide.active {
+    height: 230px !important;
+}
+
+.swiper .prev,
+.swiper .next {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 94%;
+    transform: translateY(-50%);
+    opacity: 0.65;
+    transition: 0.2s;
+}
+
+.swiper .prev:hover,
+.swiper .next:hover {
+    opacity: 1;
+}
+
+.swiper .prev svg,
+.swiper .next svg {
+    width: 40px;
+    height: 40px;
+}
+
+.swiper .prev svg path,
+.swiper .next svg path {
+    fill: #fff;
+}
+
+.swiper .prev {
+    left: 35%;
+}
+
+.swiper .next {
+    right: 35%;
+}
